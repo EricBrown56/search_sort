@@ -6,8 +6,11 @@ app = Flask(__name__)
 @app.route('/search', methods=['GET'])
 def search():
     title = request.args.get('title')
-    print(title)
-    return jsonify('success'), 200
+    if title:
+        print(title)
+        return jsonify('success'), 200
+    else:
+        print('Error retrieving title')
 
 
 

@@ -26,7 +26,7 @@ def merged(arr, left_half, right_half):
     a = 0
 
     while l < len(left_half) and r < len(right_half):
-        if left_half[l]["title"].lower() < right_half[r]["title"].lower():
+        if left_half[l].lower() < right_half[r].lower():
             arr[a] = left_half[l]
             l += 1
             a += 1
