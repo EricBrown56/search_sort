@@ -11,24 +11,14 @@ def merge_sort(arr):
 
         merged(arr, left_half, right_half) 
 
+    return -1
+
         
         
         
 
-video_titles = [
-    "The Art of Coding",
-    "Exploring the Cosmos",
-    "Cooking Masterclass: Italian Cuisine",
-    "History Uncovered: Ancient Civilizations",
-    "Fitness Fundamentals: Strength Training",
-    "Digital Photography Essentials",
-    "Financial Planning for Beginners",
-    "Nature's Wonders: National Geographic",
-    "Artificial Intelligence Revolution",
-    "Travel Diaries: Discovering Europe"
-]
 
-merge_sort(video_titles)
-print(video_titles)
+
+
 
     

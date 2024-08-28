@@ -44,3 +44,5 @@ def merged(arr, left_half, right_half):
         arr[a] = right_half[r]
         r += 1
         a += 1
+
+    

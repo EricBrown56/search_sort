@@ -21,17 +21,19 @@ def search():
     "Travel Diaries: Discovering Europe"
 ]
     merge_sort(video_titles)
+    print(video_titles)
     title = request.args.get('title')
     binary_search(video_titles, title)
-    if title in video_titles:
+    result = binary_search(video_titles, title)
+    if result != -1:
         print(title)
         return jsonify('success'), 200
     else:
-        print('Error retrieving title')
-        return jsonify('Title not found'), 404
+       print('Error retrieving title')
+       return jsonify('Title not found'), 404
 
-
-
+    
+    #return str(binary_search(video_titles, title))
 
 if __name__ == '__main__':
     app.run(debug=True)
