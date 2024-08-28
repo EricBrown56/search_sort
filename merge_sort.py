@@ -9,8 +9,9 @@ def merge_sort(arr):
         merge_sort(left_half)
         merge_sort(right_half)
 
-        merged(arr, left_half, right_half)
+        merged(arr, left_half, right_half) 
 
+        
         
         
 
@@ -27,7 +28,7 @@ video_titles = [
     "Travel Diaries: Discovering Europe"
 ]
 
-merged(video_titles)
+merge_sort(video_titles)
 print(video_titles)
 
     
