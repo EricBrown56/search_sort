@@ -1,4 +1,6 @@
 from flask import Flask, request, jsonify
+from merge_sort import merge_sort
+from binary_search import binary_search
 
 #http://127.0.0.1:5000/search?title=some-movie
 
@@ -18,7 +20,9 @@ def search():
     "Artificial Intelligence Revolution",
     "Travel Diaries: Discovering Europe"
 ]
+    merge_sort(video_titles)
     title = request.args.get('title')
+    binary_search(video_titles, title)
     if title in video_titles:
         print(title)
         return jsonify('success'), 200
