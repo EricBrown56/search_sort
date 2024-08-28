@@ -1,4 +1,4 @@
-from merge import merge, merged
+from merge import merged
 
 def merge_sort(arr):
     if len(arr) > 1:
@@ -10,6 +10,9 @@ def merge_sort(arr):
         merge_sort(right_half)
 
         merged(arr, left_half, right_half)
+
+        
+        
 
 video_titles = [
     "The Art of Coding",
@@ -24,7 +27,7 @@ video_titles = [
     "Travel Diaries: Discovering Europe"
 ]
 
-merge_sort(video_titles)
+merged(video_titles)
 print(video_titles)
 
     
